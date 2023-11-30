@@ -2,7 +2,7 @@
 
 @media (min-width: 768px) and (max-width: 1200px) {
     .products-wrap {
-        grid-template-columns: repeat(2, 360px);
+        grid-template-columns: repeat(2, 1fr);
         }
     .offer-wrap {
         padding: 0;
@@ -28,28 +28,26 @@
     }
 
     .products-wrap {
-        grid-template-columns: repeat(1, 360px);
+        width: 100%;
+        height:100%;
+        grid-template-columns: repeat(1, 1fr);
         }
 
     .offer-wrap {
-        height: 850px;
         grid-template-columns: repeat(1, 1fr);
         padding: 0;
     }
 
 
-    .offer {
-        background:
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url("../images/offer/Layer 43.png") 50%/cover no-repeat;
-        /*height: 260px;*/
+    #offer {
+        grid-template-columns: repeat(1, 1fr);
 }
 
 
-    .offer:nth-child(4) {
-        height:180px;
+    .offer-wrap:nth-child(4) {
         grid-column: span 1;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url("../images/offer/Rectangle 20.png") 50%/cover no-repeat;
-
         }
+
+    .title-products {
+        margin: 65px 0 6px 0;
+    }

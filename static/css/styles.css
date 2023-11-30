@@ -76,8 +76,6 @@ gap: 16px;
 }
 
 .container-img {
-/*width: 100%;
-height: 100%;*/
 background:
 url("../images/Layer_57-removebg-preview 1.png") 50%/contain no-repeat;
 }
@@ -111,7 +109,8 @@ height: 92px;
     font-size: calc(24px + 8 * (100vw / 1440));
 }
 
-.title_2 span {
+.main-span {
+    font-size: calc(24px + 8 * (100vw / 1440));
     color: #F16D7F;
 
 }
@@ -120,60 +119,58 @@ height: 92px;
 
 #offer {
 width: 100%;
-padding: 65px 5% 110px;
-}
-
-
-.offer-wrap {
-width: 100%;
-height: 100%;
+padding: 65px 10px 0;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 30px;
 }
 
-.offer {
+
+.offer-wrap {
 position: relative;
-background:
-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-url("../images/offer/Layer 43.png") 50%/cover no-repeat;
-height: 260px;
 }
 
-.offer:nth-child(2) {
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
- url("../images/offer/Rectangle 30.png") 50%/cover no-repeat;
+.offer_card {
+position: relative;
 }
 
-.offer:nth-child(3) {
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-url("../images/offer/Rectangle 30 (1).png") 50%/cover no-repeat;
+.offer-card__image {
+width: 100%;
+height: 100%;
 }
 
-.offer:nth-child(4) {
-height:180px;
-grid-column:1/4;
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-url("../images/offer/Rectangle 20.png") 50%/cover no-repeat;
+.offer__card-bg {
+    background: rgba(33, 22, 22, 0.70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .info {
-position: absolute;
-text-align: center;
-font-size: 16px;
-color: #FFF;
-top:50%;
-left: 50%;
-transform: translate(-50%, -50%)
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    transform: translate(-50%, -50%);
 }
 
-.offer span {
-    font-size: 24px;
+.offer-wrap:nth-child(4) {
+grid-column:1/4;
+}
+
+
+span {
+    font-size: 16px;
     color: #F16D7F;
 }
 
 /*Products*/
-
 
 .container {
 display: flex;
@@ -201,18 +198,17 @@ text-align: center;
 
 .products-wrap {
 display: grid;
-grid-template-columns: repeat(3, 360px);
+grid-template-columns: repeat(3, 1fr);
 gap: calc(16px + 14 * (100vw / 1439));
+padding: 0 10px;
 }
 
 .products {
 background-color:  #F8F8F8;
-width: 360px;
-height: 587px;
+width:100%;
 }
 
 .product-img {
-height: 420px;
 background-color:  #F7E4E2;
 }
 
@@ -221,9 +217,7 @@ background-color:  #F7E4E2;
 }
 
 .image-card {
-display: flex;
-justify-content: center;
-align-items: center;
+width: 100%;
 }
 
 .title-card {
@@ -232,7 +226,7 @@ font-size: 13px;
 
 .discriptions {
 padding: 16px 0;
-width: 300px;
+width: 100%;
 color:#9F9F9F;
 font-size: 14px;
 }
